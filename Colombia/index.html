@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+    Name: Oscar Duran
+    Date: 11/22/2023
+    File: index.html
+-->
+<html lang="en">
+    <head>
+        <title>Colombia | Home </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Vina+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+
+            <!--Mobile Nav-->
+            <nav class="mobile-nav">
+                <div id="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="carnaval.html">Carnaval</a>
+                    <a href="food.html">Food</a>
+                    <a href="nature.html">Nature</a>
+                </div>
+                <a class="nav-icon" onclick="menu()">
+                    <div id="icon">&#9776</div>
+                </a>
+            </nav>
+
+            <!--Use the header area for the website name or logo-->
+             <header>
+                <h1>Touring Colombia</h1>
+             </header>
+
+            <!--Tablet, Desktop, Nav -->
+            <nav class="tablet-desktop">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>  
+                        <li><a href="carnaval.html">Carnaval</a></li>
+                        <li><a href="food.html">Food</a></li>
+                        <li><a href="nature.html">Nature</a></li>
+                    </ul>
+                </nav>
+            </nav>
+
+            <!--Hero Image-->
+            <div id="hero" class="tablet-desktop">
+                <a href="index.html"><img src="images/colombianflag.jpeg" alt="colombian flag"></a>
+            </div>
+
+            <!--Use the main area to add the main content to the webpage-->
+            <main id="content">
+                <p>Ripe with diversity, Colombia is a country that has a little bit of everything: vibrant cities, lush rainforests, golden beaches backed by snow-capped mountains. Setting foot onto this magical land, you'll be swept up in the contagious energy and welcoming nature of the Colombian people. Where the cities are bursting with art, culture, and culinary gems, their rural counterparts are overflowing with epic wildlife, leafy green coffee plantations, and endless national parks begging for exploration. When you're ready to let yourself in on one of South America's best-kept secrets, Colombia will be waiting for you with open arms.</p>
+                <div class="grid">
+
+                    <figure class="frame">
+                        <a href="carnaval.html"><img src="images/carnval.jpeg" alt="carnal of colombia"></a>
+                        <figcaption class="pic-text">Carnaval in Barranquilla</figcaption>
+                    </figure>
+    
+    
+                    <figure class="frame">
+                        <a href="food.html"><img src="images/empanadas.png" alt="colombian food"></a>
+                        <figcaption class="pic-text">Food and Recipe</figcaption>
+                    </figure>
+    
+                    <figure class="frame">
+                        <a href="nature.html"><img src="images/beach.jpeg" alt="colombian beach"></a>
+                        <figcaption class="pic-text">Colombian Landmarks</figcaption>
+                    </figure>
+    
+                </div>
+            </main>
+
+            <!--Use the footer area to add webpage footer content-->
+            <footer>
+                <div class="copyright">
+                    <p>&copy;Copyright 2023. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </div>
+        <script src="/scripts/scripts.js"></script>
+    </body>
+</html>

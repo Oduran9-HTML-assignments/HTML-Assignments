@@ -1,0 +1,329 @@
+/*
+Author: Oscar Duran
+Date: 11/22/2023
+File Name: Styles.css
+*/
+
+/*CSS Reset*/
+body, header, nav, main, footer, h1, h3, img, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rules for body and images */
+body {
+    background-color:rgba(38,76,125,255);
+}
+
+img, video {
+    max-width: 100%;
+    display: block;
+}
+
+/*Mobile style rules*/
+
+/*Style rules to show mobile class and hide tab-desk class*/
+.mobile, .mobile-tablet {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+/*Style rule for header area */
+h1 {
+    font-family: 'Vina Sans', sans-serif;
+    font-size: 3.5em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    font-family: 'Libre Baskerville', sans-serif;
+    color: #fffefe;
+    text-shadow: 4px 4px 10px #c7bfbf;
+}
+
+h3 {
+    font-family: 'Libre Baskerville', sans-serif;
+    color: #fff;
+}
+
+h6 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+/* Style rule for navigation area */
+.mobile-nav a {
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+    font-family: 'Libre Baskerville', sans-serif;
+}
+
+/*Style rule for main content*/
+main {
+    padding: 2%;
+    font-family: 'Libre Baskerville', sans-serif;
+    color: #fff;
+    font-size: 1.15em;
+}
+
+.frame {
+    position: relative;
+    max-width: 450px;
+    margin: 2%;
+}
+
+.pic-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 99%;
+    padding: 2.5px;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+}
+
+iframe {
+    border: 2px solid #ffffff;
+    width: 95%;
+    height: 50%;
+}
+
+#hero img {
+    position: relative;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ffffff;
+    padding: 2px;
+    text-align: left;
+}
+
+th {
+    background-color: #887f7f;
+}
+
+ul, ol {
+    list-style: inside;
+}
+
+aside {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 4px 4px 10px #ffffff;
+}
+
+figure {
+    border: 4px solid #ffffff;
+    max-width: 400px;
+    margin: 2% auto;
+}
+
+figcaption {
+    padding: 2%;
+    border-top: 4px solid #ffffff;
+} 
+
+/*Media Query for Tablet Viewport*/
+@media screen and (min-width:630px), print  {   
+ /*Tablet Viewport: Show tablet-desktop class, hide mobile class*/
+.tablet-desktop {
+    display: block;
+}
+
+.mobile, .mobile-nav {
+    display: none;
+}
+
+/*Style rule for header*/
+h1 {
+    color: #ffffff;
+}
+
+/*Tablet Viewport: Style rules for nav area*/
+nav {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align:  center;
+}
+
+nav li {
+    font-size: 1.5em;
+    font-family: 'Libre Baskerville', sans-serif;
+    display: inline-block;
+    border-right: 1px solid #fff;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav li a {
+    padding: 0.1em 0.75em;
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+#hero img{ 
+    margin: auto;
+}
+
+audio {
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+td, ol {
+    line-height: 1.5;
+    margin-bottom: 200px;
+    list-style: decimal;
+    font-size: larger;
+}
+
+.frame {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.grid {
+    grid-template-columns: auto auto auto;
+    display: grid;
+    grid-gap: 30px
+}
+
+.grid {
+    display: inline-block;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
+
+aside {
+    text-align: center;
+    font-size: 1.25em;
+    font-style: italic;
+    font-weight: bold;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 8px #000;
+    text-shadow: 5px 5px 5px #b3b3b3;
+    border-radius: 0 15px;
+}
+
+main {
+    background-color: rgba(38,76,125,255)
+}
+
+footer {
+    background-color: rgba(38,76,125,255);
+    font-size: x-large;
+    color: #fff;
+}
+
+#container {
+    width: 900px;
+}
+
+.audio-experience {
+    margin-left: 180px
+}
+}
+
+/*Media Query for Desktop Viewport*/
+@media screen and (min-width: 1015px), print {
+    /* Desktop Viewport: Style rule for header */
+    header {
+        width: 200%;
+        padding-bottom: 0;
+        margin: auto;
+        margin-left: 50px;
+        font-size: x-large;
+    }
+
+    /* Desktop Viewport: Style rules for nav area */    
+    nav {
+        width: 200%;
+        font-size: xx-large;
+    }
+    nav li a:hover {
+        color: #000;
+        background-color: #ffffff;
+        transform: scale(1.3);
+    }
+    /* Desktop Viewport: Style Rules for main content*/
+   .frame:hover {
+    color: #000;
+    opacity: 1;
+    box-shadow: 8px 8px 10px #ffffff;
+    transform: translateY(10px);
+   }
+   .frame {
+    opacity: 0.9;
+   }
+
+   #hero img {
+    width: 100%;
+    margin-left: 450px;
+   }
+
+   main {
+    font-size: x-large;
+    text-align: unset;
+    margin-left: 430px;
+   }
+
+   #container {
+    width: 1080px;
+   }
+   
+   aside {
+    margin-left: 20px;
+    width: 150%;
+   }
+
+   .audio-experience {
+    margin: auto;
+   }
+
+   footer {
+    text-align: right;
+   }
+
+   h6 {
+    width: 180%;
+   }
+}

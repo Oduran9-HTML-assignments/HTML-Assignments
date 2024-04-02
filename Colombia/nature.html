@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+    Name: Oscar Duran
+    Date: 11/22/2023
+    File: nature.html
+-->
+<html lang="en">
+    <head>
+        <title>Colombia | Template </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="">
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Vina+Sans&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+    </head>
+    <body>
+        <div id="container">
+
+            <!--Mobile Nav-->
+            <nav class="mobile-nav">
+                <div id="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="carnaval.html">Carnaval</a>
+                    <a href="food.html">Food</a>
+                    <a href="nature.html">Nature</a>
+                </div>
+                <a class="nav-icon" onclick="menu()">
+                    <div id="icon">&#9776</div>
+                </a>
+            </nav>
+
+            <!--Use the header area for the website name or logo-->
+             <header>
+                <h1>Explore the Natural Wonders of Colombia</h1>
+             </header>
+
+            <!--Tablet, Desktop, Nav -->
+            <nav class="tablet-desktop">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>  
+                        <li><a href="carnaval.html">Carnaval</a></li>
+                        <li><a href="food.html">Food</a></li>
+                        <li><a href="nature.html">Nature</a></li>
+                    </ul>
+            </nav>
+
+            <!--Hero Image-->
+            <div id="hero" class="tablet-desktop">
+                <img src="images/san-andres.jpg" alt="Colombia's beach">
+            </div>
+
+            <!--Use the main area to add the main content to the webpage-->
+                <main id="content" class="grid-nature">
+
+                    <aside>
+                        <h2>Embark on a Journey through Colombia's Natural Marvels</h2>
+                    </aside>
+                    
+                    <figure>
+                        <img src="images/cano-cristales.jpg" alt="river in colombia"><!-- Figure Element 1 -->
+                        <figcaption>Join us as we navigate the crystal-clear waters of Caño Cristales, a river that defies the ordinary by transforming into a liquid rainbow. Explore the untouched beaches and dense jungles of Tayrona National Natural Park, where history and nature coexist in harmony.</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/cocora-valley.jpg" alt="cocora valley in colombia"> <!-- Figure Element 2 --> 
+                        <figcaption>Picture yourself wandering through the Amazon Rainforest, where emerald canopies stretch as far as the eye can see, concealing a kaleidoscope of life that is both mysterious and breathtaking. Or stand in awe beneath the towering wax palms of the Cocora Valley, where the air is filled with the whispers of ancient trees.</figcaption>
+                    </figure>
+                    <figure> 
+                        <img src="images/cabo-sanjuan.jpg" alt="Beach of cabo sanjuan"><!-- Figure Element 3 --> 
+                        <figcaption>Cabo San Juan del Guía is part of the Tayrona National Natural Park on the Caribbean coast of Colombia. It's a tropical paradise that attracts both locals and international tourists seeking a tranquil and beautiful coastal experience. The beach is surrounded by dense vegetation, giving it a secluded and natural feel.</figcaption>
+                    </figure>
+                    <figure> 
+                        <img src="images/amazon.jpg" alt="amazon jungle"><!-- Figure Element 4 --> 
+                        <figcaption>The Colombian Amazon is one of the most biodiverse regions on the planet. It houses an incredible variety of plant and animal species, many of which are endemic to the area. Visitors can encounter unique wildlife, including colorful birds, diverse mammals, and fascinating insects.</figcaption>
+                    </figure>
+                    
+                    <div class="audio-experience">
+                        <h3>Experience the Sounds of the Amazon Jungle</h3>
+                        <p>Click the link below to listen to the audio of the Amazon jungle:</p>
+
+                        <audio controls> 
+                            <source src="media/Colombian Forest 🇨🇴😴Only Nature Sound.mp3" type="audio/mp3">
+                            Your Browser does not support the audio element
+                        </audio>
+                    </div>
+            </main>
+
+            <!--Use the footer area to add webpage footer content-->
+            <footer>
+                <div class="copyright">
+                    <p>&copy;Copyright 2023. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </div>
+    <script src="/scripts/scripts.js"></script>
+    </body>
+</html>
